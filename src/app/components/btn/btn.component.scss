@@ -1,0 +1,40 @@
+.btn {
+    display: flex;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    &:disabled{
+        background-color: #D3D3D3;
+        border-color: #D3D3D3;
+        color: #fff
+    }
+    &.delete {
+        background-color: red;
+        &:hover {
+            color: #fff;
+            background-color: #c21d1d;
+            border-color: #f72929;
+        }
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: #0056b3;
+        border-color: #004792;
+    }
+
+    &:focus, &.focus {
+        outline: 0;
+        box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+    }
+}

@@ -1,0 +1,24 @@
+<header class="cabecalho">
+    <h1>Iatec</h1>
+</header>
+<header>
+    <form [formGroup]="filterForm">
+        <div class="filters">
+            <input type="date" id="dateFilter" name="dateFilter" formControlName="dateFilter">
+            <input type="time" id="timeFilter" name="timeFilter" formControlName="timeFilter">
+            <input type="text" id="textFilter" name="textFilter" placeholder="Filtrar eventos por titulo ou descrição" formControlName="textFilter">
+            <app-btn btn-text="Filter" (submit)="onSubmitForm()" ></app-btn>
+        </div>
+    </form>
+    <!--
+        Verificar uma forma de realizar os filtros abaixo ja que são apenas botoes 
+        Provavel solução chamar uma função que passe o parametro diretamente para o query params
+    -->
+        <div class="buttons">
+            <app-btn btn-text="Day" (submit)="onSubmitForm()"></app-btn>
+            <app-btn btn-text="Week" (submit)="onSubmitForm()"></app-btn>
+            <app-btn btn-text="Month" (submit)="onSubmitForm()"></app-btn>
+        </div>
+    
+    
+</header>

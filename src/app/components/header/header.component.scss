@@ -1,0 +1,54 @@
+$cabecalho-bg: #f8f9fa;
+$header-bg: #f8f8f8;
+$border-color: #e7e7e7;
+$input-border: #ddd;
+$button-bg: #007bff;
+$button-hover-bg: #0056b3;
+$white: white;
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cabecalho-bg;
+    padding: 20px;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+
+    h1 {
+        margin: 0;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: $header-bg;
+    border-bottom: 1px solid $border-color;
+
+    .filters, .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    input[type="date"],
+    input[type="time"],
+    input[type="text"] {
+        padding: 10px;
+        border: 1px solid $input-border;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: $button-bg;
+        color: $white;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $button-hover-bg;
+        }
+    }
+}

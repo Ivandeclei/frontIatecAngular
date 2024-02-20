@@ -1,0 +1,15 @@
+
+<main >
+    <div class="area">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form [formGroup]="loginForm">
+                <label for="username">Email:</label><br>
+                <input type="text" id="email" name="email" formControlName="email"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" formControlName="password"><br>
+                <app-btn btn-text="Enter" (submit)="onSubmitForm()" [disabled]="!loginForm.valid"></app-btn>
+            </form>
+        </div>
+    </div>
+</main>

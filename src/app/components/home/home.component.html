@@ -1,0 +1,14 @@
+<app-header></app-header>
+<main>
+    <div class="area">
+            @for(event of eventsHome; track event.id){
+                <app-card 
+                    title-event="{{event.name}}"
+                    description-event="{{event.description}}"
+                    date-event="{{this.datePipe.transform( event.dateEvent, 'dd/MM/yyyy HH:mm')}}"
+                    status-event="{{event.status}}"
+                    type-event="{{event.typeEvent}}">
+                </app-card>
+            }
+    </div>
+</main>

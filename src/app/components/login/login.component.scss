@@ -1,0 +1,45 @@
+$background-color: #f8f8f8;
+$white: white;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+$margin-bottom: 2px;
+$padding: 8px;
+$border-color: #ddd;
+$submit-background-color: #007bff;
+$submit-hover-background-color: #0056b3;
+
+.area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $background-color;
+}
+
+.login-container {
+    width: 300px;
+    padding: 16px;
+    background-color: $white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px $box-shadow-color;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    margin-bottom: $margin-bottom;
+}
+
+input[type="text"], input[type="password"] {
+    margin-bottom: 16px;
+    padding: $padding;
+    border-radius: 4px;
+    border: 1px solid $border-color;
+    width: 100%;
+}
+
